@@ -1,7 +1,6 @@
 
 
 <script>
-import { script } from "./data/script";
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
@@ -12,9 +11,7 @@ export default {
     Main,
     Footer
   },
-  data() {
-    script
-  }
+
 }
 </script>
 
