@@ -1,7 +1,11 @@
-# Vue 3 + Vite
+# Progetto HTML/VueJS
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Riprodurre il layout proposto solo in versione Desktop
 
-## Recommended IDE Setup
+## pseudo-codice
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+1- Creare il progetto in vue insieme a tutti i file necessari come main.scss, script.js ecc aggiungendo tutte le dipendenze.
+2- Creare i macro componenti richiesti dalla consegna.
+3- Creare le variabili e gli utilities in scss, quindi, dividere gli utilities in colori, misure ecc.
+4- Creare il layout inizialmente statico.  
+
