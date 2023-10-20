@@ -109,6 +109,10 @@ export default {
           font-size: 20px;
           color: #aeb1bc;
         }
+
+        .btn_white {
+          background-color: white;
+        }
        }
     }
 
