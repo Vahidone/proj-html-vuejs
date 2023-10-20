@@ -1,8 +1,12 @@
 
 
 <script>
+import CardsContainerCompany from './CardsContainer-company.vue';
 export default {
-  name: 'SectionCompany'
+  name: 'SectionCompany',
+  components: {
+    CardsContainerCompany
+  }
 }
 </script>
 
@@ -10,11 +14,16 @@ export default {
   <section>
     <div class="about">
       <h6>ABOUT THE NETWORK</h6>
-      <h1>The</h1>
+      <h1 class="me-3">The</h1>
       <h1>Company</h1>
       <p>For 12 years we have beel providing audit and warranty, financial <br>
       advice, risk advice, taxes and related services to select clients. </p>
-      
+
+      <CardsContainerCompany />
+
+      <button class="btn_green">GET IN TOUCH</button>
+      <button class="btn_white">READ ME</button>
+
     </div>
 
     <figure class="debbug">
@@ -33,7 +42,17 @@ section {
     .about {
       width: 50%;
       height: $h-100;
-      padding-left: 390px;
+      padding: 120px 0px 120px 390px;
+      color: white;
+        h1 {
+          display: inline-block;
+          font-weight: bold;
+        }
+
+        .btn_white {
+          background-color: $bg-section-company;
+          color: white;
+        }
     }
     figure {
       width: 50%;
