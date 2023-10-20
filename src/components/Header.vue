@@ -33,7 +33,7 @@ export default {
 @use "../scss/main.scss" as *;
 
 header {
-  height: 60px;
+  height: 50px;
   background-color: $bg-header;
     .container {
       display: flex;
@@ -42,12 +42,12 @@ header {
       .hours {
       height: $h-100;
       text-align: start;
-      line-height: 60px;
+      line-height: 50px;
       }
       .contacts {
       height: $h-100;
       text-align: end;
-      line-height: 60px;
+      line-height: 50px;
         li {
           display: inline-block;
           margin-left: 25px;
