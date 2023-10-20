@@ -29,3 +29,24 @@ a:hover {
   text-decoration: underline;
 }
 
+.space-betw {
+  justify-content: space-between;
+}
+
+// buttons 
+.btn_green {
+  padding: 11px 20px;
+  background-color: #068283;
+  color: white;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn_white {
+  padding: 10px 20px;
+  border: 2px solid #068283;
+  color: #068283;
+  margin: 10px;
+  border-radius: 5px;
+}
