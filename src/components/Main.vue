@@ -1,4 +1,5 @@
 <script>
+import SectionActions from './partials/SectionActions.vue';
 import SectionCompany from './partials/SectionCompany.vue';
 import SectionExcellence from './partials/SectionExcellence.vue';
 import SectionReady from './partials/SectionReady.vue';
@@ -7,7 +8,8 @@ export default {
   components: {
     SectionReady,
     SectionExcellence,
-    SectionCompany
+    SectionCompany,
+    SectionActions
   
   }
 }
@@ -18,6 +20,7 @@ export default {
     <SectionReady />
     <SectionExcellence />
     <SectionCompany />
+    <SectionActions />
   </main>
 </template>
 
