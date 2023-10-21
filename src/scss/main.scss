@@ -6,6 +6,9 @@
 @import "bootstrap/scss/bootstrap";
 
 
+
+
+
 // general 
 body {
   font-family: 'Roboto', sans-serif;
@@ -16,6 +19,9 @@ body {
   border: 1px solid black;
   min-height: 40px;
 }
+
+
+
 
 // utilities 
 ul {
@@ -36,6 +42,16 @@ a:hover {
 .space-betw {
   justify-content: space-between;
 }
+.d-in-block {
+  display: inline-block;
+}
+
+
+
+
+
+
+
 
 // buttons 
 .btn_green {
