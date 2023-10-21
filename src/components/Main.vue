@@ -1,4 +1,5 @@
 <script>
+import SectionResults from './partials/SectionResults.vue';
 import SectionActions from './partials/SectionActions.vue';
 import SectionCompany from './partials/SectionCompany.vue';
 import SectionExcellence from './partials/SectionExcellence.vue';
@@ -9,7 +10,8 @@ export default {
     SectionReady,
     SectionExcellence,
     SectionCompany,
-    SectionActions
+    SectionActions,
+    SectionResults
   
   }
 }
@@ -21,6 +23,7 @@ export default {
     <SectionExcellence />
     <SectionCompany />
     <SectionActions />
+    <SectionResults />
   </main>
 </template>
 
