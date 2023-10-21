@@ -1,4 +1,5 @@
 <script>
+import SectionTouch from './partials/Section-touch.vue'
 import SectionResults from './partials/SectionResults.vue';
 import SectionActions from './partials/SectionActions.vue';
 import SectionCompany from './partials/SectionCompany.vue';
@@ -11,7 +12,8 @@ export default {
     SectionExcellence,
     SectionCompany,
     SectionActions,
-    SectionResults
+    SectionResults,
+    SectionTouch
   
   }
 }
@@ -24,6 +26,7 @@ export default {
     <SectionCompany />
     <SectionActions />
     <SectionResults />
+    <SectionTouch />
   </main>
 </template>
 
