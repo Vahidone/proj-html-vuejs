@@ -1,6 +1,14 @@
 <script>
+
+import store from "../data/store";
 export default {
-  name: 'Footer'
+  name: 'Footer',
+
+  data () {
+    return {
+     store
+    }
+  }
 }
 </script>
 
@@ -23,37 +31,23 @@ export default {
             <button class="btn_white">GET IN TOUCH</button>
           </div>
           <div class="col m-3">
-            <h2>About</h2>
-            <ul>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-            </ul>
+            <h2 class="mt-4">About</h2>
+           <ul>
+            <li v-for="(item, index) in store.footerListaUno" :key="index"><i :class="item.icon"></i><a :href="item.href">{{ item.content }}</a></li>
+           </ul>
           </div>
           <div class="col m-3">
-            <h2>Servises</h2>
+            <h2 class="mt-4">Servises</h2>
+
             <ul>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-            </ul>
+            <li v-for="(item, index) in store.footerListaDue" :key="index"><i :class="item.icon"></i><a :href="item.href">{{ item.content }}</a></li>
+           </ul>
           </div>
           <div class="col m-3">
-            <h2>Support</h2>
+            <h2 class="mt-4">Support</h2>
             <ul>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-              <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
-            </ul>
+            <li v-for="(item, index) in store.footerListaTre" :key="index"><i :class="item.icon"></i><a :href="item.href">{{ item.content }}</a></li>
+           </ul>
           </div>
           
         </div>
@@ -92,12 +86,24 @@ footer {
           color: gray;
           .col {
             width: 25%;
-            height: $h-100;
             text-align: start;
-            padding: 30px;
+            padding: 10px;
             background-color: #191920;
+
+            ul {
+              li {
+                margin-top: 20px;
+                i {
+                    margin-right: 10px;
+                  }
+                a {
+                  color: gray;
+                }
+              }
+            }
             button {
               background-color: #111118;
+    
             }
             h2 {
               margin-left: 40px;
@@ -111,11 +117,7 @@ footer {
             p:nth-child(2) {
               margin-bottom: 30px;
             }
-            ul {
-              li {
-                margin-top: 20px
-              }
-            }
+          
            
     
           }
