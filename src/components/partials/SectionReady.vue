@@ -5,7 +5,8 @@ import Navbar from './Navbar.vue';
 export default {
   name: 'SectionReady',
   components: {
-    Navbar
+    Navbar,
+   
   }
 }
 </script>

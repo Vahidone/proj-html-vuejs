@@ -153,6 +153,7 @@ section {
         img {
           width: 40px;
           height: 40px;
+          fill: #068283;
           
         }
         span {
