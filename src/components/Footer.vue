@@ -10,7 +10,7 @@ export default {
       <div class="container">
         <div class="my-row">
           
-          <div class="col">
+          <div class="col m-3">
             <img src="../assets/svgs/svg-7.svg" alt="">
 
             <p>A Functional HTML Template <br>
@@ -22,7 +22,7 @@ export default {
 
             <button class="btn_white">GET IN TOUCH</button>
           </div>
-          <div class="col">
+          <div class="col m-3">
             <h2>About</h2>
             <ul>
               <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
@@ -33,7 +33,7 @@ export default {
               <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col m-3">
             <h2>Servises</h2>
             <ul>
               <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
@@ -44,7 +44,7 @@ export default {
               <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col m-3">
             <h2>Support</h2>
             <ul>
               <li><i class="fa-solid fa-chevron-right"></i> vahid ban</li>
@@ -65,7 +65,7 @@ export default {
     <div class="down">
       <div class="container">
         <p>Enjoy the low price. We are tracking any intention of piracy</p>
-        <p><i class="fa-regular fa-copyright"></i> 2020 NEXGEN is Proudly Powered by <span>Codings</span></p>
+        <p><i class="fa-regular fa-copyright"></i> 2020 NEXGEN is Proudly Powered by <span>Codings</span>.</p>
       </div>
     </div>
   </footer>
@@ -93,7 +93,8 @@ footer {
           .col {
             width: 25%;
             height: $h-100;
-            text-align: center;
+            text-align: start;
+            padding: 30px;
             background-color: #191920;
             button {
               background-color: #111118;
