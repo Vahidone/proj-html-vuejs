@@ -1,8 +1,12 @@
 
 
 <script>
+import ListNavbar from './ListNavbar.vue';
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  components: {
+    ListNavbar
+  }
 }
 </script>
 
@@ -10,14 +14,7 @@ export default {
   <nav>
     <img src="../../assets/svgs/svg-7.svg" alt="">
     <div class="menu">
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">RESULTS</a></li>
-        <li><a href="#">GET IN TOUCH</a></li>
-      </ul>
+     <ListNavbar />
     </div>
 
   </nav>
@@ -40,20 +37,6 @@ nav {
     .menu {
       height: 100%;
       line-height: 80px;
-       li {
-        display: inline-block;
-        margin-left: 25px;
-         
-          a {
-            color: #3E4D57;
-            &:hover {
-            padding: 10px 5px;
-            background-color: $btn-green;
-            text-decoration: none;
-            color: white;
-          }
-          }
-       }
     }
 }
 
