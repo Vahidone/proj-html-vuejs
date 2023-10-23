@@ -1,11 +1,11 @@
 <script>
-import script from '../data/script';
+import store from '../data/store';
 export default {
   name: 'Header',
 
   data () {
     return {
-      script
+      store
     }
   }
 }
@@ -22,7 +22,7 @@ export default {
       <!-- i contatti e social  -->
       <div class="contacts">
         <ul>
-          <li v-for="(item, index) in script.headerContactsList" :key="index" ><a :href="item.href"><i :class="item.icon"></i></a>
+          <li v-for="(item, index) in store.headerContactsList" :key="index" ><a :href="item.href"><i :class="item.icon"></i></a>
              <a :href="item.href">  {{ item.content }}</a></li>
     
         </ul>
