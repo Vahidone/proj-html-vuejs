@@ -1,11 +1,13 @@
 
 
 <script>
+import ListACtions from './ListACtions.vue';
 import CardsContainerActions from './CardsContainer-actions.vue';
 export default {
   name: 'SectionActions',
   components: {
-    CardsContainerActions
+    CardsContainerActions,
+    ListACtions
   }
 }
 </script>
@@ -16,17 +18,9 @@ export default {
     <div class="top">
       <h5>WE DO MORE FOR EVERYONE</h5>
       <h1>Actions &</h1>
-      <h1>Projects</h1>
+      <h1 class="h1-b">Projects</h1>
 
-      <ul>
-        <li><a href="">ALL</a> </li>
-        <li><a href="">INSTITUTIONAL</a> </li>
-        <li><a href="">SOCIAL</a></li>
-        <li><a href="">EVENTS</a></li>
-        <li><a href="">INNOVATION</a></li>
-        <li><a href="">ENVIRONMENT</a></li>
-        <li><a href="">TECHNOLOGY</a></li>
-      </ul>
+      <ListACtions />
     </div>
 
     <div class="down">
@@ -45,20 +39,22 @@ section {
   height: 1300px;
   padding-top: 130px;
   .top {
-  text-align: center;
-    li {
-      display: inline-block;
-      margin-right: 20px;
-        a {
-          color: gray;
-        }
-    }
+    text-align: center;
+    
+   
     h1 {
       display: inline-block;
       font-weight: bold;
       font-size: 3rem;
+      margin-right: 20px
     }
-}
+
+    .h1-b {
+      color: $btn-green;
+      background-color: #D9EBED;
+      padding: 5px 10px;
+    }
+  }
 }
 
 
