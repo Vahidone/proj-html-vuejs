@@ -48,14 +48,33 @@ section {
       height: $h-100;
       padding: 120px 0px 120px 390px;
       color: white;
+
+        h6 {
+          color: #06A5A6;
+          margin-bottom: 20px;
+        }
         h1 {
           display: inline-block;
           font-weight: bold;
+          background-color: #0E262D;
+          padding: 10px;
+        }
+        h1:nth-child(3) {
+          background-color: $bg-section-company;
+        }
+
+        p {
+          color: rgb(189, 188, 188);
         }
 
         .btn_white {
           background-color: $bg-section-company;
           color: white;
+          margin-top: 100px;
+            &:hover {
+              scale: 1.05;
+              cursor: pointer;
+            }
         }
     }
     figure {
