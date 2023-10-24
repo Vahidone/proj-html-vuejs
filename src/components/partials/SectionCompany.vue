@@ -1,11 +1,15 @@
 
 
 <script>
-import CardsContainerCompany from './CardsContainer-company.vue';
+import store from '../../data/store';
+import CardsCompany from './Cards-company.vue';
 export default {
   name: 'SectionCompany',
+  data () {
+    store
+  },
   components: {
-    CardsContainerCompany
+    CardsCompany
   }
 }
 </script>
@@ -19,7 +23,7 @@ export default {
       <p>For 12 years we have beel providing audit and warranty, financial <br>
       advice, risk advice, taxes and related services to select clients. </p>
 
-      <CardsContainerCompany />
+      <CardsCompany />
 
       <button class="btn_green">GET IN TOUCH</button>
       <button class="btn_white">READ ME</button>
