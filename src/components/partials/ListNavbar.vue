@@ -5,24 +5,30 @@ export default {
 
   data () {
     return {
-      ListNavbar: [
+      listNavbar: [
         {
-          content: "HOME"
+          content: "HOME",
+          href: "#"
         },
         {
-          content: "SERVICES"
+          content: "SERVICES",
+          href: "#"
         },
         {
-          content: "ABOUT"
+          content: "ABOUT",
+          href: "#"
         },
         {
-          content: "PROJECTS"
+          content: "PROJECTS",
+          href: "#"
         },
         {
-          content: "RESULTS"
+          content: "RESULTS",
+          href: "#"
         },
         {
-          content: "GET IN TOUCH"
+          content: "GET IN TOUCH",
+          href: "#"
         }
       ]
     }
@@ -33,7 +39,7 @@ export default {
 
 <template>
   <ul>
-    <li v-for="(list, index) in ListNavbar" :key="index"><a href="#">{{ list.content }}</a></li>
+    <li v-for="(list, index) in listNavbar" :key="index"><a :href="list.href">{{ list.content }}</a></li>
   </ul>
 </template>
 
