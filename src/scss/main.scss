@@ -63,10 +63,21 @@ a:hover {
   border-radius: 5px;
 }
 
+.btn_green:hover {
+  scale: 1.05;
+  background-color: #108c8c;
+  cursor: pointer;
+}
+
 .btn_white {
   padding: 10px 20px;
   border: 2px solid #068283;
   color: #068283;
   margin: 10px;
   border-radius: 5px;
+}
+
+.btn_white:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
