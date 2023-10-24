@@ -1,12 +1,12 @@
 
 
 <script>
+import CardsActions from './Cards-actions.vue';
 import ListACtions from './ListACtions.vue';
-import CardsContainerActions from './CardsContainer-actions.vue';
 export default {
   name: 'SectionActions',
   components: {
-    CardsContainerActions,
+    CardsActions,
     ListACtions
   }
 }
@@ -24,7 +24,7 @@ export default {
     </div>
 
     <div class="down">
-      <CardsContainerActions />
+      <CardsActions />
     </div>
   </div>
 

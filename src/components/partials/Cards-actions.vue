@@ -1,8 +1,14 @@
 
 
 <script>
+import store from '../../data/store'
 export default {
-  name: 'Cards-actions'
+  name: 'Cards-actions',
+  data () {
+    return {
+      store
+    }
+  }
 
 }
 </script>
@@ -10,49 +16,13 @@ export default {
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-4" v-for="(card, index) in store.cardsArrAction" :key="index">
         <div class="card relative">
-          
-          <div class="filter">sono filter</div>
-          <h3>Academic Professional <br>program in social media</h3>
+          <img :src="card.img" alt="">
+          <h3>{{card.title}}</h3>
+          <div class="filter"></div>
         </div> 
       </div>
-      <div class="col-4">
-        <div class="card relative">
-          <h3>Academic Professional <br>program in social media</h3>
-          <div class="filter">sono filter</div>
-        </div>
-        
-      </div>
-      <div class="col-4">
-        <div class="card relative">
-          <h3>Academic Professional <br>program in social media</h3>
-          <div class="filter">sono filter</div>
-        </div>
-        
-      </div>
-      <div class="col-4">
-        <div class="card relative">
-          <h3>Academic Professional <br>program in social media</h3>
-          <div class="filter">sono filter</div>
-        </div>
-        
-      </div>
-      <div class="col-4">
-        <div class="card relative">
-          <h3>Academic Professional <br>program in social media</h3>
-          <div class="filter">sono filter</div>
-        </div>
-        
-      </div>
-      <div class="col-4">
-        <div class="card relative">
-          <h3>Academic Professional <br>program in social media</h3>
-          <div class="filter">sono filter</div>
-        </div>
-        
-      </div>
-
       
     </div>
   </div>
@@ -62,14 +32,27 @@ export default {
 @use "../../scss/main.scss" as *;
 @use "../../scss/partials/variables" as *;
 
-
-.card {
-  
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  .card {
+  width: 100%;
   height: 350px;
   margin-top: 25px;
-  background-image: url(../../assets/img/project-1.jpg);
   text-align: center;
-  padding-top: 260px;
+  border-radius: 10px;
+  overflow: hidden;
+   &:hover {
+    scale: 1.05;
+    transition: all 1s;
+    cursor: pointer;
+   }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .filter {
   position: absolute;
   top: 0;
@@ -79,10 +62,16 @@ export default {
   background-color: rgba(0, 0, 0, .3)
   }
   h3 {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
     color: white;
   }
   
 }
+
+}
+
 
 
 
