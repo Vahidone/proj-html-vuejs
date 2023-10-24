@@ -72,7 +72,7 @@ export default {
   width: calc(100% - 60px);
   height: $h-100;
   background-image: url(../../assets/img/bg-parallax.png);
-  background-size: cover;
+  background-size: -150px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;

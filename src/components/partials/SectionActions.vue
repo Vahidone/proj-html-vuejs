@@ -16,7 +16,7 @@ export default {
   <section>
     <div class="container">
     <div class="top">
-      <h5>WE DO MORE FOR EVERYONE</h5>
+      <h6>WE DO MORE FOR EVERYONE</h6>
       <h1>Actions &</h1>
       <h1 class="h1-b">Projects</h1>
 
@@ -41,6 +41,10 @@ section {
   .top {
     text-align: center;
     
+    h6 {
+      color: #06A5A6;
+      margin-bottom: 20px;
+    }
    
     h1 {
       display: inline-block;

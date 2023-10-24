@@ -1,7 +1,13 @@
 
 <script>
+import store from '../../data/store'
 export default {
-  name: 'SectionTouch'
+  name: 'SectionTouch',
+  data() {
+    return {
+      store
+    }
+  }
 
 }
 </script>
@@ -58,14 +64,10 @@ export default {
 
       <div class="right">
         <h4 class="fw-bold">Example Inc.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.</p>
-
-        <p>Praesenr diam lacus, dapibus sed imperdiet <br>consectetur</p>
-
+      
         <ul>
-          <li><a href="#"><i class="fa-solid fa-phone"></i> +1 (305) 1234-5678</a></li>
-          <li><a href="#"><i class="fa-solid fa-envelope"></i> hello@example.com</a></li>
-          <li><a href="#"><i class="fa-solid fa-location-dot"></i> Main Avenue, 987</a></li>
+          <li v-for="(item, index) in store.listArrExampleTouch" :key="index"><p v-if="item.text">{{ item.text }}</p><a :href="item.href"><i v-if="item.icon" :class="item.icon"></i>{{ item.info }}</a></li>
+         
         </ul>
 
         <button class="btn_white bg-white">VIEW MAP</button>

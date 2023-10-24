@@ -107,16 +107,19 @@ section {
         img {
           width: 40px;
           height: 40px;
-          fill: #068283;
+          color: #068283;
           
         }
         span {
           font-size: 22px;
-           &:hover {
-            scale: 1.2;
-            color: gray;
-            cursor: pointer;
-           }
+          &:hover {
+          scale: 1.2;
+          color: gray;
+          cursor: pointer;
+          }
+          i {
+            color: #068283;
+          }
         }
       } 
     }

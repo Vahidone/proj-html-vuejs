@@ -1,8 +1,14 @@
 
 
 <script>
+import store from '../../data/store'
 export default {
-  name: 'SectionResults'
+  name: 'SectionResults',
+  data() {
+    return {
+      store
+    }
+  }
 }
 </script>
 
@@ -15,25 +21,11 @@ export default {
         <h1>Results</h1>
         <h1 class="ms-3">in Numbers</h1>
         <div class="row">
-          <div class="col-3">
-            <h1>128</h1>
-            <span>Certifications</span>
+          <div class="col-3" v-for="(item, index) in store.CrardArrResults" :key="index">
+            <h1>{{item.number}}</h1>
+            <span>{{item.name}}</span>
           </div>
 
-          <div class="col-3">
-            <h1>128</h1>
-            <span>Certifications</span>
-          </div>
-
-          <div class="col-3">
-            <h1>128</h1>
-            <span>Certifications</span>
-          </div>
-
-          <div class="col-3">
-            <h1>128</h1>
-            <span>Certifications</span>
-          </div>
         </div>
 
       </div>
@@ -45,12 +37,9 @@ export default {
     <div class="down">
       <div class="container">
         <ul>
-        <li><img src="../../assets/img/logo-4.png" alt=""></li>
-        <li><img src="../../assets/img/logo-5.png" alt=""></li>
-        <li><img src="../../assets/img/logo-1.png" alt=""></li>
-        <li><img src="../../assets/img/logo-2.png" alt=""></li>
-        <li><img src="../../assets/img/logo-3.png" alt=""></li>
-        <li><img src="../../assets/img/logo-4.png" alt=""></li>
+        <li v-for="(item, index) in store.logoArrResults" :key="index">
+          <img :src="item.img">
+        </li>
       </ul>
 
       </div>
@@ -100,7 +89,7 @@ section {
         }
         span {
           color: white;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           font-weight: bold;
           display: block;
         }
@@ -121,7 +110,7 @@ section {
         justify-content: space-between;
         li {
           img {
-            width: 100px;
+            width: 90px;
             height: 30px;
           }
         }
