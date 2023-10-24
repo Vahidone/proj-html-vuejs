@@ -30,7 +30,14 @@ export default {
         {
           content: "TECHNOLOGY"
         }
-      ]
+      ],
+      activeIndex: null,
+    }
+  },
+
+  methods: {
+    setActive(index) {
+      this.activeIndex = index;
     }
   }
 
@@ -39,7 +46,7 @@ export default {
 
 <template>
   <ul>
-    <li v-for="(list, index) in ListActions" :key="index"><a href="#">{{ list.content }}</a></li>
+    <li v-for="(list, index) in ListActions" :key="index" :class="{active : activeIndex === index}" ><a href="##" @click="setActive(index)">{{ list.content }}</a></li>
   </ul>
 </template>
 
@@ -53,6 +60,12 @@ ul {
     margin-top: 70px;
     display: inline-block;
     margin-right: 20px;
+
+    &.active a {
+      color: $btn-green;
+        background-color: #D9EBED;
+        padding: 7px;
+    }
     a {
       color: gray;
       &:hover {
