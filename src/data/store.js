@@ -211,7 +211,7 @@ export default {
   
 
 
-  // Cards array for company section 
+  // Cards array for Excellence section 
   cardsArrExcellence: [
     {
       img: '/public/svgs/svg-1.svg',
@@ -250,6 +250,85 @@ export default {
       content: "Lorem ipsum dolor sit amet. consectetor adipiscing elit "
     },
     
+  ],
+
+
+
+  // Cards array for results section 
+
+  CrardArrResults: [
+    {
+      number: "128",
+      name: "Certification"
+
+    },
+    {
+      number: "230",
+      name: "Employees"
+
+    },
+    {
+      number: "517",
+      name: "Customers"
+
+    },
+    {
+      number: "94",
+      name: "Countries Served"
+
+    },
+  ],
+
+
+  // lista dei logo in Results section 
+
+  logoArrResults: [
+    {
+      img: "/public/logo-4.png"
+    },
+    {
+      img: "/public/logo-5.png"
+    },
+    {
+      img: "/public/logo-1.png"
+    },
+    {
+      img: "/public/logo-2.png"
+    },
+    {
+      img: "/public/logo-3.png"
+    },
+    {
+      img: "/public/logo-4.png"
+    },
+  ],
+
+
+  // lista della parte Example in Touch section 
+  listArrExampleTouch: [
+    {
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    },
+    {
+      text: "Praesenr diam lacus, dapibus sed imperdiet consectetur"
+    },
+
+    {
+      icon: "fa-solid fa-phone",
+      info: "+1 (305) 1234-5678",
+      href: "#"
+    },
+    {
+      icon: "fa-solid fa-envelope",
+      info: "hello@example.com",
+      href: "#"
+    },
+    {
+      icon: "fa-solid fa-location-dot",
+      info: "Main Avenue, 987",
+      href: "#"
+    },
+
   ]
  
     
